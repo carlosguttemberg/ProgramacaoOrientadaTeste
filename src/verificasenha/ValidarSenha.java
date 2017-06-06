@@ -93,5 +93,7 @@ public class ValidarSenha {
         return aprovado;
     }
             
-    
+    public boolean VerificaSequenciaCharacteres(String login, String senha){
+        return !(senha.contains(login) || senha.contains(login.toLowerCase()));
+    }
 }
