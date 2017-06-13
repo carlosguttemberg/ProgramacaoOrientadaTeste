@@ -23,6 +23,10 @@ public class VerificaSenha {
         ValidarSenha valida = new ValidarSenha();
         
         valida.VerificaCaracterMaiusculo(user.getSenha());
+        String login="Maria", senha1="MariaJoao123", senha2="xmaria1267", senha3="xm4ria1267";
+        System.out.println(valida.VerificaSequenciaCharacteres(login, senha1)? "Senha válida!":"Senha Invalida!");
+        System.out.println(valida.VerificaSequenciaCharacteres(login, senha2)? "Senha válida!":"Senha Invalida!");
+        System.out.println(valida.VerificaSequenciaCharacteres(login, senha3)? "Senha válida!":"Senha Invalida!");
         
     }
     
